@@ -1,0 +1,144 @@
+/* Tags */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: radial-gradient(rgb(61, 61, 61), black);
+}
+
+nav{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+          
+}
+
+form{
+    color: white;
+    border: 5px white solid;
+    border-radius: 5px;
+    padding: 10px
+}
+
+[aria-current] {
+    font-weight: bold;
+    color: black !important;
+    background-color: white;
+  }
+
+/* Class */
+.anav{
+    color:white;
+    transition: background-color 1s, color 1s;
+    
+}
+
+.anav:hover{
+    color: black;
+    font-weight: bold;
+    background-color: white;   
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.staff{    
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+    margin-bottom: 10px;
+}
+
+.stafftexto{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 20px;
+    word-wrap: break-word;
+    white-space: normal; 
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.staff:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    border: coral 5px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.displaynoticias{    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+
+.cuadronoticias{
+    width: 27%;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 5px black solid;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.noticiatexto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.fitimg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu{
+    width: 100%;
+    text-align: center;
+}
+
+.textarea{
+    width: 100%;
+    height: 300px;
+}
+
+/* id */
+#logo{
+    height: 50px;
+}
+
+#twitter {
+    height: 40px;
+}
+
+#form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -1,0 +1,142 @@
+/* Tags */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$textoBlanco: white;
+$textoNegro: black;
+$fondoBlanco: white;
+
+body{
+    background-image: radial-gradient(rgb(61, 61, 61), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+          
+}
+
+form{
+    border: 5px white solid;
+    border-radius: 5px;
+    padding: 10px
+}
+
+[aria-current] {
+    font-weight: bold;
+    color: $textoNegro !important;
+    background-color: $fondoBlanco;
+  }
+
+/* Class */
+
+.menu__titulo{
+    color:$textoBlanco;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.menu__colorTexto{
+    color:$textoBlanco;
+    
+    &:hover{
+        color: $textoNegro !important;
+        font-weight: bold;
+        background-color: $fondoBlanco;   
+    }
+}
+
+.staff{    
+    overflow: hidden;
+    position: relative;
+    height: 270px;
+    margin-bottom: 20px;
+
+    &:hover .staff__overlay{
+        bottom: 0;
+        height: 100%;
+        border: coral 5px solid;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+.staff__overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: $fondoBlanco;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.staff__texto{
+    color: $textoNegro;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 20px;
+    word-wrap: break-word;
+    white-space: normal; 
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.noticias{    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+
+.noticias__cuadro{
+    width: 27%;
+    height: 400px;
+    background-color: $fondoBlanco;
+    border-radius: 20px;
+    border: 5px black solid;
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.noticias__texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.fitimg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* id */
+#logo{
+    height: 50px;
+}
+
+#twitter {
+    height: 40px;
+}
+
+#form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    color: $textoBlanco;
+}
