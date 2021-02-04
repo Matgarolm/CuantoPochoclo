@@ -8,6 +8,56 @@ $textoBlanco: white;
 $textoNegro: black;
 $fondoBlanco: white;
 
+/* Footer */
+.footer__icons{
+    height: 50px;
+}
+
+.footer__p{
+    font-size: 2rem;
+}
+
+.footer__ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+}
+  
+@media (min-width: 500px) {
+    .footer__ul {
+      grid-auto-flow: column;
+    }
+}
+  
+.footer__li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+  
+li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+}
+  
+.footer__div {
+    display: flex;
+    width: 100%;
+}
+  
+@keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+}
+
 body{
     background-image: radial-gradient(rgb(61, 61, 61), black);
     background-repeat: no-repeat;
@@ -123,14 +173,9 @@ form{
     height: 200px;
     object-fit: cover;
 }
-
 /* id */
 #logo{
     height: 50px;
-}
-
-#twitter {
-    height: 40px;
 }
 
 #form{
